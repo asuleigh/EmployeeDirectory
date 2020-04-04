@@ -1,26 +1,68 @@
-import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
+import React, { Component } from "react";
+import Card from "./components/Card";
+import Wrapper from "./components/Wrapper";
+import Navbar from "./components/Navbar";
+import Sort from "./components/Sort";
+import employees from "./employees.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+class App extends Component {
+
+  state = {
+    search: "",
+    employees,
+    aToZ: true
+  };
+
+  handleInputChange = event => {
+    console.log(event.target.value);
+    this.setState({ search: event.target.value });
+  };
+
+  sortName = () => {
+    let currentEmployees = this.state.employees
+    if (this.state.aToZ === true) {
+      currentEmployees.sort(function(a,b) {
+        if(a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+        return 0;
+      })
+      this.setState({ employees: currentEmployees ,  aToZ: false });
+    }
+    else {
+      currentEmployees.sort(function(a,b) {
+        if(a.name.toLowerCase() > b.name.toLowerCase()) return -1;
+        return 0;
+      })
+      this.setState({ employees: currentEmployees ,  aToZ: true });
+    }
+  }
+  
+  render() {
+    const filteredEmployees = this.state.employees.filter((employee) => { 
+      return employee.name.indexOf(this.state.search) !== -1;
+    })
+
+    return (
+      <Wrapper>
+        <Navbar />
+        <Sort
+          handleInputChange={this.handleInputChange}
+          sortName={this.sortName}
+          search={this.state.search}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        </Sort>
+        {filteredEmployees.map(employee => (
+          <Card
+            id={employee.id}
+            key={employee.id}
+            name={employee.name}
+            image={employee.image}
+            occupation={employee.occupation}
+            contact={employee.contact}
+          />
+        ))}
+      </Wrapper>
+    );
+  }
 }
 
 export default App;
