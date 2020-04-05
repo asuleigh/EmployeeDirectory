@@ -3,7 +3,7 @@ import 'bootstrap';
 
 function Sort(props) {
   return (
-      <div className="md-form mt-0 mx-auto">
+      <div className="md-form mt-0 mx-auto bg-light">
         <input placeholder="Search an Employee" className="form-control" 
         type="text" value={props.search} onChange={props.handleInputChange} name="search" id="search"></input>
         <h3 className="mx-auto">Sort By Category:</h3>

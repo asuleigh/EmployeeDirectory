@@ -5,10 +5,10 @@
     position: relative;
     width: 90%;
     box-shadow: 0 3px 6px rgb(80, 82, 190), 0 3px 6px rgb(80, 82, 190);
-    text-align: left;
-  }
+    text-align: center;
+}
   
-  .card > .img-container {
+.card > .img-container {
     overflow: hidden;
     text-align: center;
     padding-top: 30px;
@@ -16,52 +16,39 @@
     display: inline-block;
     width: 5%;
     margin: auto;
-  }
-  .card > .img-container > img {
+}
+.card > .img-container > img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 2px solid azure;
-  }
-  
-  .card > .content {
+}
+
+.card > .content {
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 15px;
     display: inline-block;
-  }
-  
-  .card > .content > ul {
+}
+
+.card > .content > ul {
     list-style-type: none;
-  }
-  
-  .card > .content > ul > li {
+}
+
+.card > .content > ul > li {
     margin-top: 18px;
-  }
-  
-  .name {
+}
+
+.name {
     list-style-type: none;
     text-align: center;
     margin: auto;
     font-weight: bolder;
-  }
-  
-  .card > .remove {
-    color: #ff1783;
-    font-size: 48px;
-    position: absolute;
-    top: -20px;
-    right: 5px;
-    cursor: pointer;
-  }
-  
-  .card > .remove:hover {
-    color: #af0d3e;
-  }
-  
-  strong {
+}
+
+strong {
     padding-left: 30px;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     width: 95%;
-  }
+}

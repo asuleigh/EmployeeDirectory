@@ -2,70 +2,70 @@
     {
       "id": 1,
       "name": "Ace Harrison",
-      "image": "",
+      "image": "/images/emp1.jpeg",
       "occupation": "Painter",
       "contact": "ace.harrison@example.com"
     },
     {
       "id": 2,
       "name": "Elton Bonham",
-      "image": "",
+      "image": "/images/emp2.jpeg",
       "occupation": "Illusionist",
       "contact": "elton.bonham@example.com"
     },
     {
       "id": 3,
       "name": "Buddy Cooper",
-      "image": "",
+      "image": "/images/emp3.jpeg",
       "occupation": "Architect",
       "contact": "buddy.cooper@example.com"
     },
     {
       "id": 4,
       "name": "Mick Orbison",
-      "image": "",
+      "image": "/images/emp4.jpeg",
       "occupation": "Administrator",
       "contact": "mick.orbison@example.com"
     },
     {
       "id": 5,
       "name": "Alayna Hetfield",
-      "image": "",
+      "image": "/images/emp5.jpeg",
       "occupation": "Web Development",
       "contact": "alayna.hetfield@example.com"
     },
     {
       "id": 6,
       "name": "Angus Waylon",
-      "image": "",
+      "image": "/images/emp6.jpeg",
       "occupation": "Spoon Player",
       "contact": "angus.waylon@example.com"
     },
     {
       "id": 7,
       "name": "Nancy Jennings",
-      "image": "",
+      "image": "/images/emp7.jpeg",
       "occupation": "Business Owner",
       "contact": "nancy.jennings@example.com"
     },
     {
       "id": 8,
       "name": "Chester Burton",
-      "image": "",
+      "image": "/images/emp8.jpeg",
       "occupation": "Guitar Tuner",
       "contact": "chester.burton@example.com"
     },
     {
       "id": 9,
       "name": "Maynard Geddy",
-      "image": "",
+      "image": "/images/emp9.jpeg",
       "occupation": "Hairstylist",
       "contact": "maynard.geddy@example.com"
     },
     {
       "id": 10,
       "name": "Miles Thurston",
-      "image": "",
+      "image": "/images/emp10.jpeg",
       "occupation": "Media Marketing",
       "contact": "miles.thurston@example.com"
     }
