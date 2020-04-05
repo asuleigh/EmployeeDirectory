@@ -1,8 +1,8 @@
-# EmployeeDirectory
+# [EmployeeDirectory](https://salty-fortress-61529.herokuapp.com/)
 An employee directory created with React
 
 ### LINKS
-[Heroku Link](http://protected-beyond-52173.herokuapp.com/)
+[Heroku Link](https://salty-fortress-61529.herokuapp.com/)
 <br>
 [GitHub Repo](https://github.com/asuleigh/EmployeeDirectory)
 
