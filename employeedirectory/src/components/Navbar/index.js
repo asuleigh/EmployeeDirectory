@@ -2,7 +2,9 @@
 import "./style.css";
 
 function Title() {
-  return <h1>Employee Directory</h1>;
+  return <div className={"col-12"}>
+    <h1>Employee Directory</h1>
+    </div>;
 }
 
 export default Title;
