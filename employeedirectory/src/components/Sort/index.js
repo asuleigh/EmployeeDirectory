@@ -1,18 +1,17 @@
-  
 import React from "react";
-import "./style.css";
 import 'bootstrap';
 
 function Sort(props) {
   return (
-      <div className="searchBlock md-form mt-0">
-        <input placeholder="Narrow Your Search!" className="inputBox blockItem form-control" type="text" value={props.search} onChange={props.handleInputChange} name="search" id="search"></input>
-        <h3 className="blockItem mx-auto">Sort By:</h3>
-        <div className="blockItem">
-            <button className="btn btn-secondary" type="button" onClick={props.sortName}>
+      <div className="md-form mt-0 mx-auto">
+        <input placeholder="Search an Employee" className="form-control" 
+        type="text" value={props.search} onChange={props.handleInputChange} name="search" id="search"></input>
+        <h3 className="mx-auto">Sort By Category:</h3>
+        <div>
+            <button className="btn btn-outline-primary ml-4" type="button" onClick={props.sortName}>
             A-Z
             </button>
-            <button className="btn btn-secondary ml-4" type="button" onClick={props.sortOccupation}>
+            <button className="btn btn-outline-primary ml-4" type="button" onClick={props.sortOccupation}>
             Occupation
             </button>
         </div>
